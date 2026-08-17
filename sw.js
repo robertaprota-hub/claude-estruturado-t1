@@ -1,4 +1,4 @@
-const CACHE = 'claude-estruturado-t1-v4';
+const CACHE = 'claude-estruturado-t1-v5';
 const ARQUIVOS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ARQUIVOS)).then(() => self.skipWaiting()));
